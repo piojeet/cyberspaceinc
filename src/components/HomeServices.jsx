@@ -93,7 +93,7 @@ export default function HomeServices() {
         <section className='pt-[60px]'>
             <div className='max-w-[1440px] w-full lg:p-8 p-4 mx-auto'>
 
-                <h2 className='text-5xl font-manrope text-center'>Our core AI Transformation services</h2>
+                <h2 className='text-5xl font-manrope text-center font-bold'>Our core AI Transformation services</h2>
                 <p className='font-manrope text-lg text-gray-700 text-center mt-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consequuntur in quod facilis esse eos sequi possimus veritatis quam id.</p>
 
                 <div className='grid grid-cols-3 gap-6 mt-10'>
