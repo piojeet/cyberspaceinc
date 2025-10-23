@@ -49,6 +49,15 @@
 .animated-ui .span-mother span:nth-child(13) { transition: 1.4s; }
 .animated-ui .span-mother span:nth-child(14) { transition: 1.5s; }
 .animated-ui .span-mother span:nth-child(15) { transition: 1.6s; }
+.animated-ui .span-mother span:nth-child(16) { transition: 1.7s; }
+.animated-ui .span-mother span:nth-child(17) { transition: 1.8s; }
+.animated-ui .span-mother span:nth-child(18) { transition: 1.9s; }
+.animated-ui .span-mother span:nth-child(19) { transition: 2s; }
+.animated-ui .span-mother span:nth-child(20) { transition: 2.1s; }
+.animated-ui .span-mother span:nth-child(21) { transition: 2.2s; }
+.animated-ui .span-mother span:nth-child(22) { transition: 2.3s; }
+.animated-ui .span-mother span:nth-child(23) { transition: 2.4s; }
+.animated-ui .span-mother span:nth-child(24) { transition: 2.5s; }
 
 .animated-ui .span-mother2 {
   display: flex;
@@ -79,3 +88,13 @@
 .animated-ui .span-mother2 span:nth-child(13) { transition: 1.4s; }
 .animated-ui .span-mother2 span:nth-child(14) { transition: 1.5s; }
 .animated-ui .span-mother2 span:nth-child(15) { transition: 1.6s; }
+.animated-ui .span-mother2 span:nth-child(16) { transition: 1.7s; }
+.animated-ui .span-mother2 span:nth-child(17) { transition: 1.8s; }
+.animated-ui .span-mother2 span:nth-child(18) { transition: 1.9s; }
+.animated-ui .span-mother2 span:nth-child(19) { transition: 2s; }
+.animated-ui .span-mother2 span:nth-child(20) { transition: 2.1s; }
+.animated-ui .span-mother2 span:nth-child(21) { transition: 2.2s; }
+.animated-ui .span-mother2 span:nth-child(22) { transition: 2.3s; }
+.animated-ui .span-mother2 span:nth-child(23) { transition: 2.4s; }
+.animated-ui .span-mother2 span:nth-child(24) { transition: 2.5s; }
+.animated-ui .span-mother2 span:nth-child(25) { transition: 2.6s; }

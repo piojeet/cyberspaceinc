@@ -5,6 +5,7 @@ import HomeServices from '../components/HomeServices'
 import HomeAction from '../components/HomeAction'
 import FAQ from '../components/FAQ'
 import Experts from '../components/Experts'
+import FooterContactForm from '../components/FooterContactForm'
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
       <HomeAction />
       <Experts />
       <FAQ />
+      <FooterContactForm />
     </div>
   )
 }

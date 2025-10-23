@@ -97,7 +97,7 @@ export default function Footer() {
     ];
 
     return (
-        <footer className="bg-black text-white mt-10">
+        <footer className="bg-black text-white">
             {/* Main Section */}
             <div className="max-w-[1400px] mx-auto px-8 py-20 grid gap-12 lg:grid-cols-12">
                 {/* Logo + Info */}
