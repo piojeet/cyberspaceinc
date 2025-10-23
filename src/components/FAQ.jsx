@@ -32,7 +32,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="bg-white">
+    <section className="bg-white py-10">
       <div className="max-w-[1440px] w-full lg:p-8 p-4 mx-auto">
         <h2 className="text-4xl md:text-5xl font-manrope text-center font-bold">
           Our Core AI Transformation Services

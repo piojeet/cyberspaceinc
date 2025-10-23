@@ -6,17 +6,17 @@ import RippleGrid from './RippleGrid'
 
 export default function HomeHero() {
     return (
-        <section className='pt-[200px] relative bg-black pb-[100px]'>
+        <section className='md:pt-[200px] pt-[140px] relative bg-black md:pb-[100px] pb-[50px]'>
             <div className='max-w-[1440px] w-full mx-auto lg:px-8 px-4 gap-16 relative z-10 pointer-events-none'>
                 <div className='space-y-4 content-center max-w-[800px] w-full mx-auto flex flex-col items-center'>
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-500/40 border border-[#6366f1]/20">
                         <Sparkles className="h-4 w-4 text-white" />
                         <span className="text-sm text-white font-manrope">AI-Powered Innovation</span>
                     </div>
-                    <h1 className='text-7xl font-manrope font-bold leading-tight text-white text-center'>
+                    <h1 className='lg:text-7xl md:text-5xl text-4xl font-manrope font-bold leading-tight text-white text-center'>
                         EXPLORE INNOVATIONS HERE
                     </h1>
-                    <div className='text-2xl font-manrope text-white text-center'>
+                    <div className='md:text-2xl text-xl font-manrope text-white text-center'>
                         Welcome to Cyber Space Technologies
                     </div>
                     <p className='font-manrope leading-snug text-white text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta maxime excepturi dolore quam, sed inventore deserunt rem numquam vel aliquam?</p>
@@ -46,7 +46,7 @@ export default function HomeHero() {
                     </div>
                 </div>
             </div>
-            <div className='absolute top-0 left-0 w-full h-full opacity-60'>
+            <div className='absolute top-0 left-0 w-full h-full opacity-60 flex items-center justify-center'>
                 <RippleGrid
                     enableRainbow={false}
                     gridColor="#ffffff"

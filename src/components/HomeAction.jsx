@@ -44,7 +44,7 @@ function ActionCard({ title, desc, img }) {
             </div>
             <div className='space-y-2 p-4 pt-0'>
                 <div className='font-manrope text-black text-xl'>{title}</div>
-                <div className='font-manrope text-gray-600'>{desc}</div>
+                <div className='font-manrope text-gray-600 text-sm lg:text-base'>{desc}</div>
             </div>
 
         </div>
@@ -56,10 +56,10 @@ export default function HomeAction() {
     <section className='pt-[60px]'>
             <div className='max-w-[1440px] w-full lg:p-8 p-4 mx-auto'>
 
-                <h2 className='text-5xl font-manrope text-center font-bold'>Accelerated Business Use Cases AI in Action</h2>
-                <p className='font-manrope text-lg text-gray-700 text-center mt-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consequuntur in quod facilis esse eos sequi possimus veritatis quam id.</p>
+                <h2 className='lg:text-5xl md:text-4xl text-3xl font-manrope text-center font-bold'>Accelerated Business Use Cases AI in Action</h2>
+                <p className='font-manrope lg:text-lg text-gray-700 text-center mt-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consequuntur in quod facilis esse eos sequi possimus veritatis quam id.</p>
 
-                <div className='grid grid-cols-3 gap-6 mt-10'>
+                <div className='grid md:grid-cols-3 gap-6 mt-10'>
                     {cardData.map((card, idx) => (
                         <ActionCard key={idx} {...card} />
                     ))}

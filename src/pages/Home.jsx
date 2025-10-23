@@ -9,7 +9,7 @@ import FooterContactForm from '../components/FooterContactForm'
 
 function Home() {
   return (
-    <div>
+    <div className='overflow-hidden'>
       <HomeHero />
       <Features />
       <HomeServices />

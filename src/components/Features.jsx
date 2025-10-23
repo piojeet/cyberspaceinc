@@ -4,7 +4,7 @@ import Latter from '../assets/images/6836c4e26f9a8f1e9b6f8f52_Group 1707490645.s
 
 export default function Features() {
     return (
-        <section className="pt-[100px]">
+        <section className="md:pt-[100px] pt-[50px]">
             <div className="bg-black py-8 overflow-x-auto select-none">
                 <Marquee behavior="scroll" direction="left" autoFill={true} speed={60} pauseOnHover={true}>
                     <div className="flex items-center gap-4 mr-8">

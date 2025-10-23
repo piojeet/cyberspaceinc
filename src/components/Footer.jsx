@@ -99,7 +99,7 @@ export default function Footer() {
     return (
         <footer className="bg-black text-white">
             {/* Main Section */}
-            <div className="max-w-[1400px] mx-auto px-8 py-20 grid gap-12 lg:grid-cols-12">
+            <div className="max-w-[1400px] mx-auto lg:px-8 px-4 py-20 lg:pb-20 pb-10 grid gap-12 lg:grid-cols-12">
                 {/* Logo + Info */}
                 <div className="lg:col-span-4">
                     <img src={Logo} alt="CST Logo" className="h-20 object-contain mb-6" />
@@ -155,7 +155,7 @@ export default function Footer() {
 
             {/* Global Presence */}
             <div className="border-t border-white/5">
-                <div className="max-w-[1400px] mx-auto px-8 py-12 pt-0">
+                <div className="max-w-[1400px] mx-auto lg:px-8 px-4 py-12 pt-0">
                     <h3 className="text-sm mb-8 uppercase tracking-wider text-white/90">
                         Global Presence
                     </h3>
@@ -179,7 +179,7 @@ export default function Footer() {
 
             {/* Bottom Bar */}
             <div className="border-t border-white/5">
-                <div className="max-w-[1400px] mx-auto px-8 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div className="max-w-[1400px] mx-auto lg:px-8 px-4 py-6 flex md:flex-row justify-between items-center gap-4 flex-col-reverse">
                     <p className="text-xs text-white/50">
                         © 2025 Cyber Space Technologies. All Rights Reserved.
                     </p>

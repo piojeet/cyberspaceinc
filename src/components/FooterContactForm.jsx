@@ -7,7 +7,7 @@ export default function FooterContactForm() {
     <div>
 
       {/* Get In Touch Section */}
-      <section className="relative py-32 px-6 bg-black overflow-hidden">
+      <section className="relative md:py-32 pt-10 px-6 bg-black overflow-hidden">
         {/* Decorative Elements */}
         <div className="absolute top-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
@@ -40,12 +40,12 @@ export default function FooterContactForm() {
           {/* Contact Form */}
           <div className="relative">
             {/* Form Container with Glass Effect */}
-            <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl rounded-3xl p-12 border border-white/10 shadow-2xl">
+            <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl rounded-3xl md:p-12 p-6 border border-white/10 shadow-2xl">
               {/* Decorative Corner Elements */}
               <div className="absolute -top-3 -left-3 w-24 h-24 border-t-2 border-l-2 border-white/20 rounded-tl-3xl"></div>
               <div className="absolute -bottom-3 -right-3 w-24 h-24 border-b-2 border-r-2 border-white/20 rounded-br-3xl"></div>
 
-              <form className="space-y-8">
+              <form className="md:space-y-8 space-y-6">
                 {/* Name and Email Row */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {/* Name Input */}
