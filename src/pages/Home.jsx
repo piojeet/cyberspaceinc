@@ -4,6 +4,7 @@ import Features from '../components/Features'
 import HomeServices from '../components/HomeServices'
 import HomeAction from '../components/HomeAction'
 import FAQ from '../components/FAQ'
+import Experts from '../components/Experts'
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <Features />
       <HomeServices />
       <HomeAction />
+      <Experts />
       <FAQ />
     </div>
   )
