@@ -1,34 +1,83 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
-import Latter1 from '../assets/images/6836c4e26f9a8f1e9b6f8f52_Group 1707490645.svg'
-import Latter2 from '../assets/images/6836c4bb4d58153c9fa128d6_Group 1707490644.svg'
-import Latter3 from '../assets/images/6836c4795ac8a6ca60385888_Group 1707490643 (1).svg'
+import Latter from '../assets/images/6836c4e26f9a8f1e9b6f8f52_Group 1707490645.svg';
+import { Brain, Zap, Target, Sparkles, Rocket, Globe, Lightbulb } from "lucide-react";
 
-export default function Features() {
+export default function CreativeMarquee() {
+    const marqueeItems = [
+        {
+            icon: <Lightbulb className="md:w-14 md:h-14 size-8" />,
+            text: "Think Strategically",
+            gradient: "from-cyan-400 to-blue-600",
+            glow: "shadow-cyan-500/50"
+        },
+        {
+            icon: <Brain className="md:w-14 md:h-14 size-8" />,
+            text: "Act with AI",
+            gradient: "from-purple-500 to-pink-600",
+            glow: "shadow-purple-500/60"
+        },
+        {
+            icon: <Zap className="md:w-14 md:h-14 size-8" />,
+            text: "Scale Fast",
+            gradient: "from-yellow-400 to-orange-600",
+            glow: "shadow-yellow-400/70"
+        },
+        {
+            icon: <Target className="md:w-14 md:h-14 size-8" />,
+            text: "Win with Data",
+            gradient: "from-emerald-400 to-teal-600",
+            glow: "shadow-emerald-400/60"
+        },
+        {
+            icon: <Sparkles className="md:w-14 md:h-14 size-8" />,
+            text: "Innovate Daily",
+            gradient: "from-indigo-500 to-purple-700",
+            glow: "shadow-indigo-500/60"
+        },
+        {
+            icon: <Rocket className="md:w-14 md:h-14 size-8" />,
+            text: "Launch AI Now",
+            gradient: "from-rose-500 to-red-600",
+            glow: "shadow-rose-500/70"
+        },
+    ];
+
     return (
-        <section className="md:pt-[100px] pt-[50px]">
-            <div className="bg-black py-8 overflow-x-auto select-none">
-                <Marquee behavior="scroll" direction="left" autoFill={true} speed={60} pauseOnHover={true}>
-                    <div className="flex items-center gap-4 mr-8">
-                        <div className="bg-[linear-gradient(90deg,hsla(221,45%,73%,1)_0%,hsla(220,78%,29%,1)_100%)] rounded-lg">
-                            <img src={Latter1} alt="img" className="lg:h-20 md:h-16 h-14 object-contain" />
+        <section className="relative overflow-hidden bg-gradient-to-b from-black via-gray-900 to-black lg:py-16 md:py-10 py-8">
+
+            <div className="relative z-10">
+                <Marquee 
+                    speed={50} 
+                    pauseOnHover={true} 
+                    gradient={false}
+                    className="select-none"
+                >
+                    {marqueeItems.concat(marqueeItems).map((item, index) => (
+                        <div 
+                            key={index}
+                            className="group lg:mx-10 md:mx-8 mx-2 flex items-center gap-6 cursor-pointer transform transition-all duration-300 hover:scale-105 py-4 px-4 overflow-hidden"
+                        >
+                            {/* Icon Card with 3D Glow */}
+                            <div className={`relative p-4 rounded-2xl bg-gradient-to-br ${item.gradient} shadow-2xl transform-gpu transition-all duration-500 group-hover:rotate-6 group-hover:scale-110`}>
+                                <div className={`absolute inset-0 rounded-2xl bg-white/20 blur-xl ${item.glow} animate-ping`}></div>
+                                <div className="relative text-white">
+                                    {item.icon}
+                                </div>
+                            </div>
+
+                            {/* Text with Animated Underline */}
+                            <div className="relative">
+                                <span className="text-2xl md:text-4xl font-extrabold text-white tracking-tight">
+                                    {item.text}
+                                </span>
+                                <div className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-white to-transparent transition-all duration-500 group-hover:w-full"></div>
+                            </div>
                         </div>
-                        <div className="lg:text-5xl md:text-4xl text-2xl text-white">Think Strategically</div>
-                    </div>
-                    <div className="flex items-center gap-4 mr-8">
-                        <div className="bg-[linear-gradient(90deg,hsla(221,45%,73%,1)_0%,hsla(220,78%,29%,1)_100%)] rounded-lg">
-                            <img src={Latter2} alt="img" className="lg:h-20 md:h-16 h-14 object-contain" />
-                        </div>
-                        <div className="lg:text-5xl md:text-4xl text-2xl text-white">Act with AI</div>
-                    </div>
-                    <div className="flex items-center gap-4 mr-8">
-                        <div className="bg-[linear-gradient(90deg,hsla(221,45%,73%,1)_0%,hsla(220,78%,29%,1)_100%)] rounded-lg">
-                            <img src={Latter3} alt="img" className="lg:h-20 md:h-16 h-14 object-contain" />
-                        </div>
-                        <div className="lg:text-5xl md:text-4xl text-2xl text-white">Scale Intelligently</div>
-                    </div>
+                    ))}
                 </Marquee>
             </div>
+
         </section>
     );
 }
