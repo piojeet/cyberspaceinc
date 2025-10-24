@@ -1,69 +1,75 @@
 import React from 'react'
-import { Check, HandFist } from 'lucide-react'
+import { Bot, ChartNoAxesCombined, Check, Cloud, Cloudy, Gavel, GraduationCap, Hammer, Shield, Sparkles } from 'lucide-react'
 import AnimatedButton from './ui/AnimatedButton'
 
 const cardData = [
     {
         title: 'AI Strategy & Governance',
-        desc: 'Plan, govern, and de risk enterprise AI adoption.',
+        desc: 'Plan, govern, and de-risk enterprise AI adoption.',
         points: [
-            'AI Strategy & Roadmap',
-            'AI Strategy & Roadmap',
-            'AI Strategy & Roadmap',
+            'AI Vision & Maturity Assessment',
+            'Enterprise AI Roadmap Design',
+            'AI Ethics, Risk & Compliance Framework'
         ],
+        icon: <Shield size={35} />
     },
     {
-        title: 'AI Strategy & Governance',
-        desc: 'Plan, govern, and de risk enterprise AI adoption.',
+        title: 'AI Agent Development',
+        desc: 'Build autonomous AI agents for automation.',
         points: [
-            'AI Strategy & Roadmap',
-            'AI Strategy & Roadmap',
-            'AI Strategy & Roadmap',
+            'Custom AI Agent Design & Training',
+            'Multi-Agent Orchestration Systems',
+            'Integration with CRM, ERP & APIs'
         ],
+        icon: <Bot size={35} />
     },
     {
-        title: 'AI Strategy & Governance',
-        desc: 'Plan, govern, and de risk enterprise AI adoption.',
+        title: 'Data & Analytics Transformation',
+        desc: 'Unlock insights with AI-powered analytics.',
         points: [
-            'AI Strategy & Roadmap',
-            'AI Strategy & Roadmap',
-            'AI Strategy & Roadmap',
+            'Data Lake & Pipeline Modernization',
+            'Predictive & Prescriptive Analytics',
+            'Real-time Dashboards & AI Insights'
         ],
+        icon: <ChartNoAxesCombined size={35} />
     },
     {
-        title: 'AI Strategy & Governance',
-        desc: 'Plan, govern, and de risk enterprise AI adoption.',
+        title: 'Generative AI Integration',
+        desc: 'Implement ChatGPT-like tools in your workflows.',
         points: [
-            'AI Strategy & Roadmap',
-            'AI Strategy & Roadmap',
-            'AI Strategy & Roadmap',
+            'Custom LLM Fine-tuning (RAG, LoRA)',
+            'AI Content & Code Generation Tools',
+            'Secure Enterprise GenAI Deployment'
         ],
+        icon: <Gavel size={35} />
     },
     {
-        title: 'AI Strategy & Governance',
-        desc: 'Plan, govern, and de risk enterprise AI adoption.',
+        title: 'Cloud AI Migration',
+        desc: 'Move to AWS/Azure/GCP with AI optimization.',
         points: [
-            'AI Strategy & Roadmap',
-            'AI Strategy & Roadmap',
-            'AI Strategy & Roadmap',
+            'AI Workload Assessment & TCO Analysis',
+            'MLOps Pipeline on Cloud (SageMaker, Vertex)',
+            'Cost-Optimized GPU/TPU Scaling'
         ],
+        icon: <Cloud size={35} /> 
     },
     {
-        title: 'AI Strategy & Governance',
-        desc: 'Plan, govern, and de risk enterprise AI adoption.',
+        title: 'AI Training & Change Management',
+        desc: 'Upskill your team for AI-first culture.',
         points: [
-            'AI Strategy & Roadmap',
-            'AI Strategy & Roadmap',
-            'AI Strategy & Roadmap',
+            'Role-based AI Training Programs',
+            'Hands-on AI Hackathons & Pilots',
+            'Change Management & Adoption Playbook'
         ],
+        icon: <GraduationCap size={35} />
     },
 ];
 
-function ServiceCard({ title, desc, points }) {
+function ServiceCard({ title, desc, points, icon }) {
     return (
         <div className='flex flex-col justify-between gap-8 group relative overflow-hidden rounded-2xl bg-card border border-border p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1'>
             <div className='bg-[linear-gradient(90deg,hsla(221,45%,73%,1)_0%,hsla(220,78%,29%,1)_100%)] text-white size-16 flex items-center justify-center text-5xl rounded-lg'>
-                <HandFist size={38} strokeWidth={1} />
+                {icon}
             </div>
             <div className='space-y-2'>
                 <div className='font-manrope text-black text-xl'>{title}</div>

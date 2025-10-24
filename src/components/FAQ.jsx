@@ -5,22 +5,32 @@ const faqs = [
   {
     question: "What is We Think AI?",
     answer:
-      "We Think AI is a digital transformation partner that helps businesses leverage artificial intelligence for automation, data analytics, and smarter decision-making.",
+      "We Think AI is your strategic partner in AI transformation. We help enterprises design, deploy, and scale AI solutions — from strategy to governance, agents to analytics — with a focus on measurable ROI and ethical adoption.",
   },
   {
     question: "How can AI help my business?",
     answer:
-      "AI can optimize your workflows, predict trends, and improve customer experiences by automating repetitive tasks and generating actionable insights.",
+      "AI automates repetitive tasks, predicts customer behavior, optimizes supply chains, detects fraud in real-time, and generates personalized content — saving costs, boosting revenue, and improving decision speed.",
   },
   {
     question: "Do you offer custom AI solutions?",
     answer:
-      "Yes, we specialize in creating tailor-made AI systems — from chatbots and recommendation engines to predictive analytics — based on your business goals.",
+      "Yes. We build fully custom AI systems tailored to your data, workflows, and goals — including autonomous AI agents, fine-tuned LLMs (RAG), computer vision models, and MLOps pipelines.",
   },
   {
     question: "What industries do you serve?",
     answer:
-      "We work across multiple industries including finance, healthcare, e-commerce, marketing, and logistics — providing scalable AI solutions for each sector.",
+      "We serve Finance (fraud detection, credit scoring), Healthcare (diagnostics, patient triage), E-commerce (recommendations, churn prediction), Logistics (route optimization), and Manufacturing (predictive maintenance).",
+  },
+  {
+    question: "How long does AI implementation take?",
+    answer:
+      "Timeline depends on scope:\n• Proof of Concept (POC): 2–4 weeks\n• MVP Deployment: 6–10 weeks\n• Enterprise Rollout: 3–6 months\nWe follow agile sprints with weekly demos.",
+  },
+  {
+    question: "What’s the cost of AI consulting?",
+    answer:
+      "We offer flexible models:\n• Fixed-price POCs: $15K–$40K\n• Monthly retainers: $10K–$25K\n• Project-based: Quoted after discovery\nFirst AI Readiness Assessment is FREE.",
   },
 ];
 

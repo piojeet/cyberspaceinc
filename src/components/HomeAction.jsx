@@ -1,37 +1,42 @@
 import React from 'react'
 import Img1 from '../assets/images/68c2aa68ca27f3e13ab46f22_Multi Agent Orchestration (2)-p-2000.png'
+import Img2 from '../assets/images/68c2aa3984f793bc1b545820_AI Agents Management-p-2000.png'
+import Img3 from '../assets/images/68c2aab8041f0f83288c1456_Enterprise Intelligence Dashboard-p-2000.png'
+import Img4 from '../assets/images/68c2aafc25b371feed9fcc83_Automated Backend Control Entities (1)-p-2000.png'
+import Img5 from '../assets/images/68c2ab25a23cda3fb10db769_Autonomous Process Operators-p-2000.png'
+import Img6 from '../assets/images/68c2ab678ac29e90180b40a0_AI Capability Blueprint & Maturity Assessment (1)-p-2000.png'
 import AnimatedButton from './ui/AnimatedButton';
 
 const cardData = [
     {
         title: 'AI Agent Management',
-        desc: 'Plan, govern, and de risk enterprise AI adoption.',
+        desc: 'Reduced 40% customer query handling time.',
+        img: Img2
+    },
+    {
+        title: 'Predictive Supply Chain',
+        desc: 'Cut inventory cost by 25%.',
         img: Img1
     },
     {
-        title: 'AI Agent Management',
-        desc: 'Plan, govern, and de risk enterprise AI adoption.',
-        img: Img1
+        title: 'Automated Compliance Monitoring',
+        desc: 'Real-time risk detection.',
+        img: Img3
     },
     {
-        title: 'AI Agent Management',
-        desc: 'Plan, govern, and de risk enterprise AI adoption.',
-        img: Img1
+        title: 'Generative AI for Marketing',
+        desc: '10x faster content creation.',
+        img: Img4
     },
     {
-        title: 'AI Agent Management',
-        desc: 'Plan, govern, and de risk enterprise AI adoption.',
-        img: Img1
+        title: 'AI-Powered Fraud Detection',
+        desc: '99.8% accuracy.',
+        img: Img5
     },
     {
-        title: 'AI Agent Management',
-        desc: 'Plan, govern, and de risk enterprise AI adoption.',
-        img: Img1
-    },
-    {
-        title: 'AI Agent Management',
-        desc: 'Plan, govern, and de risk enterprise AI adoption.',
-        img: Img1
+        title: 'Smart Customer Support',
+        desc: '24/7 multilingual AI bots.',
+        img: Img6
     },
 ];
 
