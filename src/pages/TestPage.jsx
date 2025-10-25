@@ -16,13 +16,12 @@ import axios from "axios";
  * @property {string} address.state
  */
 
-const ITEMS_PER_PAGE = 12; // Har page pe 12 users
+const ITEMS_PER_PAGE = 12; // Per page 12 users
 
 function TestPage() {
     // ===================================================================
     // State
     // ===================================================================
-    /** @type {User[]} */
     const [users, setUsers] = useState([]);
     const [search, setSearch] = useState("");
     const [loading, setLoading] = useState(true);
@@ -144,9 +143,6 @@ function TestPage() {
         return pages;
     };
 
-    // ===================================================================
-    // 5. Render UI
-    // ===================================================================
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-8 px-4 pt-24">
             <div className="max-w-6xl mx-auto">

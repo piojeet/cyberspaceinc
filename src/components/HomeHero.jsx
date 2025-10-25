@@ -7,7 +7,7 @@ import Glob from './Glob'
 
 export default function HomeHero() {
     return (
-        <section className='md:pt-[200px] pt-[140px] relative bg-black md:pb-[100px] pb-[50px]'>
+        <section className='md:pt-[200px] pt-[140px] relative bg-dark-color md:pb-[100px] pb-[50px]'>
             <div className='max-w-[1440px] w-full mx-auto lg:px-8 px-4 gap-16 relative z-10 grid lg:grid-cols-2 md:grid-cols-[1fr_.7fr] grid-cols-1'>
                 <div className='space-y-4 content-center max-w-[800px] w-full mx-auto flex flex-col items-center justify-center md:items-start'>
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-500/40 border border-[#6366f1]/20">

@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         'blue-color':'#6366f1',
+        'dark-color': '#0f0e1a'
       },
       fontFamily: {
         manrope: ['Manrope', 'sans-serif'],

@@ -38,7 +38,7 @@ function GlobeMesh() {
         map={color}
         normalMap={normal}
         aoMap={aoMap}
-        aoMapIntensity={2}
+        aoMapIntensity={3}
       />
     </mesh>
   )
@@ -50,7 +50,7 @@ export default function Glob() {
       <Canvas camera={{ position: [0, 0, 5], fov: 50 }}>
         <ambientLight intensity={3} color={"#88ccff"} />
         <directionalLight intensity={3} position={[6, 6, 6]} color={"#66b3ff"} />
-        <pointLight position={[-6, -3, -5]} intensity={3} color={"#3366ff"} />
+        <pointLight position={[6, 3, 5]} intensity={3} color={"#3366ff"} />
 
         <GlobeMesh />
         <OrbitControls

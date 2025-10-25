@@ -44,7 +44,7 @@ export default function CreativeMarquee() {
     ];
 
     return (
-        <section className="relative overflow-hidden bg-gradient-to-b from-black via-gray-900 to-black lg:py-16 md:py-10 py-8">
+        <section className="relative overflow-hidden bg-dark-color lg:py-16 md:py-10 py-8">
 
             <div className="relative z-10">
                 <Marquee 
