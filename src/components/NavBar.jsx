@@ -90,7 +90,7 @@ export default function NavBar() {
             <NavLink to="/" onClick={closeMenu}>Clients & Partners</NavLink>
           </li>
           <li>
-            <NavLink to="/" onClick={closeMenu}>Careers</NavLink>
+            <NavLink to="/careers" onClick={closeMenu}>Careers</NavLink>
           </li>
           <li>
             <NavLink to="/" onClick={closeMenu}>Our Team</NavLink>
