@@ -3,23 +3,24 @@ import React from 'react'
 import BG from '../assets/images/68ce59f0bf72d4300ecee108_hbi-654-p-500.jpg'
 import Icon from '../assets/images/68304ad41e2a74b90f207eda_icon-input-white.svg'
 import RippleGrid from './RippleGrid'
+import Glob from './Glob'
 
 export default function HomeHero() {
     return (
         <section className='md:pt-[200px] pt-[140px] relative bg-black md:pb-[100px] pb-[50px]'>
-            <div className='max-w-[1440px] w-full mx-auto lg:px-8 px-4 gap-16 relative z-10 pointer-events-none'>
-                <div className='space-y-4 content-center max-w-[800px] w-full mx-auto flex flex-col items-center'>
+            <div className='max-w-[1440px] w-full mx-auto lg:px-8 px-4 gap-16 relative z-10 grid lg:grid-cols-2 md:grid-cols-[1fr_.7fr] grid-cols-1'>
+                <div className='space-y-4 content-center max-w-[800px] w-full mx-auto flex flex-col items-center justify-center md:items-start'>
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-500/40 border border-[#6366f1]/20">
                         <Sparkles className="h-4 w-4 text-white" />
                         <span className="text-sm text-white font-manrope">AI-Powered Innovation</span>
                     </div>
-                    <h1 className='lg:text-7xl md:text-5xl text-4xl font-manrope font-bold leading-tight text-white text-center'>
+                    <h1 className='lg:text-7xl md:text-5xl text-4xl font-manrope font-bold leading-tight text-white text-center md:text-start'>
                         EXPLORE INNOVATIONS HERE
                     </h1>
-                    <div className='md:text-2xl text-xl font-manrope text-white text-center'>
+                    <div className='md:text-2xl text-xl font-manrope text-white text-center md:text-start'>
                         Welcome to Cyber Space Technologies
                     </div>
-                    <p className='font-manrope leading-snug text-white text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta maxime excepturi dolore quam, sed inventore deserunt rem numquam vel aliquam?</p>
+                    <p className='font-manrope leading-snug text-white text-center md:text-start'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta maxime excepturi dolore quam, sed inventore deserunt rem numquam vel aliquam?</p>
                 </div>
 
                 <div className='hidden'>
@@ -45,6 +46,11 @@ export default function HomeHero() {
                         </div>
                     </div>
                 </div>
+
+                <div>
+                    <Glob />
+                </div>
+
             </div>
             <div className='absolute top-0 left-0 w-full h-full opacity-60 flex items-center justify-center'>
                 <RippleGrid
