@@ -68,7 +68,7 @@ const cardData = [
 function ServiceCard({ title, desc, points, icon }) {
     return (
         <div className='flex flex-col justify-between gap-8 group relative overflow-hidden rounded-2xl bg-card border border-border p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1'>
-            <div className='bg-[linear-gradient(90deg,hsla(221,45%,73%,1)_0%,hsla(220,78%,29%,1)_100%)] text-white size-16 flex items-center justify-center text-5xl rounded-lg'>
+            <div className='bg-gradient-to-br from-cyan-400 to-blue-600 text-white size-16 flex items-center justify-center text-5xl rounded-lg'>
                 {icon}
             </div>
             <div className='space-y-2'>
@@ -87,7 +87,7 @@ function ServiceCard({ title, desc, points, icon }) {
                 <AnimatedButton
                     label="Explore More"
                     to="/contact"
-                    className="py-2 px-6 border border-black rounded-full font-manrope font-medium text-sm hover:bg-black text-black hover:text-white transition-colors duration-200"
+                    className="py-2 px-6 border border-blue-500 text-blue-600 hover:border-transparent rounded-full font-manrope font-medium text-sm hover:bg-gradient-to-br from-cyan-400 to-blue-600 hover:text-white transition-colors duration-200"
                 />
             </div>
         </div>
@@ -99,7 +99,7 @@ export default function HomeServices() {
         <section className='pt-[60px]'>
             <div className='max-w-[1440px] w-full lg:p-8 p-4 mx-auto'>
 
-                <h2 className='lg:text-5xl md:text-4xl text-3xl font-manrope text-center font-bold'>Our core AI Transformation services</h2>
+                <h2 className='lg:text-5xl md:text-4xl text-3xl font-manrope text-center font-bold'>Our core AI Transformation <span className='text-transparent bg-clip-text bg-button-linear'>services</span></h2>
                 <p className='font-manrope lg:text-lg text-gray-700 text-center mt-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consequuntur in quod facilis esse eos sequi possimus veritatis quam id.</p>
 
                 <div className='grid md:grid-cols-3 gap-6 mt-10'>

@@ -49,7 +49,7 @@ export default function NavBar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
-  // ✅ Toggle mobile menu
+  // Toggle mobile menu
   const toggleMenu = () => setMenuOpen(true);
   const closeMenu = () => setMenuOpen(false);
 
@@ -87,7 +87,7 @@ export default function NavBar() {
             </span>
           </li>
           <li>
-            <NavLink to="/" onClick={closeMenu}>Clients & Partners</NavLink>
+            <NavLink to="/clients-partners" onClick={closeMenu}>Clients & Partners</NavLink>
           </li>
           <li>
             <NavLink to="/careers" onClick={closeMenu}>Careers</NavLink>
@@ -119,14 +119,14 @@ export default function NavBar() {
 
         {/* ✅ Right Section */}
         <div className="flex items-center gap-6">
-          <NavLink className="text-2xl">
+          {/* <NavLink className="text-2xl">
             <FiSearch />
-          </NavLink>
+          </NavLink> */}
           <div className="lg:block hidden">
             <AnimatedButton
               label="Contact"
               to="/contact"
-              className="py-2 px-6 border border-black rounded-full font-manrope font-medium text-sm bg-black text-white"
+              className="py-2 px-6 rounded-full font-manrope font-medium text-sm bg-gradient-to-br from-cyan-400 to-blue-600 text-white"
             />
           </div>
 

@@ -23,20 +23,19 @@ export default function Experts() {
       <section className="flex-1 py-20">
         <div className="max-w-[1440px] mx-auto lg:p-8 p-4">
           {/* Header */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center lg:mb-20 mb-6">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_.5fr] gap-16 items-center lg:mb-20 mb-6">
             {/* Left Side - Content */}
             <div className="lg:space-y-8 space-y-6">
               <div className='text-center md:text-left'>
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-color/10 rounded-full border border-blue-color/20">
-                  <Users className="w-4 h-4 text-blue-color" />
-                  <span className="text-sm text-blue-color">Meet Our Team</span>
+                  <Users className="w-4 h-4 text-blue-600" />
+                  <span className="text-sm text-blue-600">Meet Our Team</span>
                 </div>
               </div>
 
               <div>
                 <h2 className="lg:text-5xl md:text-4xl text-3xl mb-4 font-manrope font-bold md:text-left text-center">
-                  Our experienced
-                  experts
+                  Our experienced <span className='text-transparent bg-clip-text bg-button-linear'>experts</span>
                 </h2>
               </div>
 
@@ -48,12 +47,12 @@ export default function Experts() {
                 <AnimatedButton
                   label="Join us now"
                   to="/"
-                  className="px-8 py-4 border border-black rounded-full font-manrope font-medium text-sm bg-black text-white"
+                  className="px-8 py-4 rounded-full font-manrope font-medium text-sm bg-button-linear text-white"
                 />
                 <AnimatedButton
                   label="View all team"
                   to="/"
-                  className="px-8 py-4 border border-black rounded-full font-manrope font-medium text-sm"
+                  className="px-8 py-4 border border-blue-500 rounded-full font-manrope font-medium text-sm text-blue-600"
                 />
               </div>
 
@@ -82,7 +81,7 @@ export default function Experts() {
 
               {/* Main Featured Card */}
               <div className="relative bg-white rounded-3xl p-8 shadow-2xl shadow-gray-900/10">
-                <div className="absolute top-6 right-6 px-4 py-2 bg-[linear-gradient(90deg,hsla(221,45%,73%,1)_0%,hsla(220,78%,29%,1)_100%)] text-white text-xs rounded-full font-manrope">
+                <div className="absolute top-6 right-6 px-4 py-2 bg-gradient-to-br from-cyan-400 to-blue-600 text-white text-xs rounded-full font-manrope">
                   Leadership
                 </div>
 
@@ -101,13 +100,13 @@ export default function Experts() {
                   <div className="flex items-center gap-3 pt-4">
                     <a
                       href="#"
-                      className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-50 to-cyan-50 flex items-center justify-center hover:from-blue-600 hover:to-cyan-500 group transition-all duration-300"
+                      className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-50 to-cyan-50 flex items-center justify-center hover:bg-button-linear group transition-all duration-300"
                     >
                       <Linkedin className="w-5 h-5 text-blue-600 group-hover:text-white transition-colors" />
                     </a>
                     <a
                       href="#"
-                      className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-50 to-cyan-50 flex items-center justify-center hover:from-blue-600 hover:to-cyan-500 group transition-all duration-300"
+                      className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-50 to-cyan-50 flex items-center justify-center hover:bg-button-linear group transition-all duration-300"
                     >
                       <Mail className="w-5 h-5 text-blue-600 group-hover:text-white transition-colors" />
                     </a>
@@ -118,52 +117,10 @@ export default function Experts() {
           </div>
 
           {/* Expert Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-8 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-8 gap-6">
             {/* Expert Card 1 */}
             <div className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
               {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-600/0 to-cyan-500/0 group-hover:from-blue-600/90 lg:group-hover:to-cyan-500/90 transition-all duration-500 z-10 hidden lg:block"></div>
-
-              {/* Image */}
-              <div className="aspect-[4/5] overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200">
-                <img
-                  src={experts[0].image}
-                  alt={experts[0].name}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-
-              {/* Content */}
-              <div className="relative z-20 p-6">
-                <h3 className="text-xl text-gray-900 mb-2 lg:group-hover:text-white transition-colors duration-300">
-                  {experts[0].name}
-                </h3>
-                <p className="text-gray-600 lg:group-hover:text-white/90 transition-colors duration-300">
-                  {experts[0].role}
-                </p>
-
-                {/* Social Links - Hidden, shows on hover */}
-                <div className="flex items-center gap-3 mt-4 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500">
-                  <a
-                    href="#"
-                    className="w-9 h-9 rounded-lg lg:bg-white/20 bg-black backdrop-blur-sm flex items-center justify-center lg:hover:bg-white/30 transition-all"
-                  >
-                    <Linkedin className="w-4 h-4 text-white" />
-                  </a>
-                  <a
-                    href="#"
-                    className="w-9 h-9 rounded-lg lg:bg-white/20 bg-black backdrop-blur-sm flex items-center justify-center lg:hover:bg-white/30 transition-all"
-                  >
-                    <Mail className="w-4 h-4 text-white" />
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* Expert Card 2 */}
-            <div className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
-              {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-600/0 to-pink-500/0 group-hover:from-purple-600/90 group-hover:to-pink-500/90 transition-all duration-500 z-10 lg:block hidden"></div>
 
               {/* Image */}
               <div className="aspect-[4/5] overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200">
@@ -176,10 +133,10 @@ export default function Experts() {
 
               {/* Content */}
               <div className="relative z-20 p-6">
-                <h3 className="text-xl text-gray-900 mb-2 lg:group-hover:text-white transition-colors duration-300">
+                <h3 className="text-xl text-gray-900 mb-2 transition-colors duration-300">
                   {experts[1].name}
                 </h3>
-                <p className="text-gray-600 lg:group-hover:text-white/90 transition-colors duration-300">
+                <p className="text-gray-600 transition-colors duration-300">
                   {experts[1].role}
                 </p>
 
@@ -187,13 +144,93 @@ export default function Experts() {
                 <div className="flex items-center gap-3 mt-4 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500">
                   <a
                     href="#"
-                    className="w-9 h-9 rounded-lg lg:bg-white/20 bg-black backdrop-blur-sm flex items-center justify-center lg:hover:bg-white/30 transition-all"
+                    className="w-9 h-9 rounded-lg bg-button-linear backdrop-blur-sm flex items-center justify-center lg:hover:bg-white/30 transition-all"
                   >
                     <Linkedin className="w-4 h-4 text-white" />
                   </a>
                   <a
                     href="#"
-                    className="w-9 h-9 rounded-lg lg:bg-white/20 bg-black backdrop-blur-sm flex items-center justify-center lg:hover:bg-white/30 transition-all"
+                    className="w-9 h-9 rounded-lg bg-button-linear backdrop-blur-sm flex items-center justify-center lg:hover:bg-white/30 transition-all"
+                  >
+                    <Mail className="w-4 h-4 text-white" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Expert Card 3 */}
+            <div className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+              {/* Gradient Overlay */}
+
+              {/* Image */}
+              <div className="aspect-[4/5] overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200">
+                <img
+                  src={experts[1].image}
+                  alt={experts[1].name}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+
+              {/* Content */}
+              <div className="relative z-20 p-6">
+                <h3 className="text-xl text-gray-900 mb-2 transition-colors duration-300">
+                  {experts[1].name}
+                </h3>
+                <p className="text-gray-600 transition-colors duration-300">
+                  {experts[1].role}
+                </p>
+
+                {/* Social Links - Hidden, shows on hover */}
+                <div className="flex items-center gap-3 mt-4 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500">
+                  <a
+                    href="#"
+                    className="w-9 h-9 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-700 backdrop-blur-sm flex items-center justify-center lg:hover:bg-white/30 transition-all"
+                  >
+                    <Linkedin className="w-4 h-4 text-white" />
+                  </a>
+                  <a
+                    href="#"
+                    className="w-9 h-9 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-700 backdrop-blur-sm flex items-center justify-center lg:hover:bg-white/30 transition-all"
+                  >
+                    <Mail className="w-4 h-4 text-white" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Expert Card 2 */}
+            <div className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+              {/* Gradient Overlay */}
+
+              {/* Image */}
+              <div className="aspect-[4/5] overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200">
+                <img
+                  src={experts[1].image}
+                  alt={experts[1].name}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+
+              {/* Content */}
+              <div className="relative z-20 p-6">
+                <h3 className="text-xl text-gray-900 mb-2 transition-colors duration-300">
+                  {experts[1].name}
+                </h3>
+                <p className="text-gray-600 transition-colors duration-300">
+                  {experts[1].role}
+                </p>
+
+                {/* Social Links - Hidden, shows on hover */}
+                <div className="flex items-center gap-3 mt-4 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500">
+                  <a
+                    href="#"
+                    className="w-9 h-9 rounded-lg bg-button-linear backdrop-blur-sm flex items-center justify-center lg:hover:bg-white/30 transition-all"
+                  >
+                    <Linkedin className="w-4 h-4 text-white" />
+                  </a>
+                  <a
+                    href="#"
+                    className="w-9 h-9 rounded-lg bg-button-linear backdrop-blur-sm flex items-center justify-center lg:hover:bg-white/30 transition-all"
                   >
                     <Mail className="w-4 h-4 text-white" />
                   </a>
@@ -204,7 +241,6 @@ export default function Experts() {
             {/* Join Team Card */}
             <div className="group relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 flex items-center justify-center p-12">
               {/* Animated Background */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-cyan-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
               {/* Content */}
               <div className="relative z-10 text-center space-y-6">
@@ -222,7 +258,7 @@ export default function Experts() {
                 <AnimatedButton
                   label="View Careers"
                   to="/"
-                  className="px-6 py-3 border border-black rounded-full font-manrope font-medium text-sm bg-white text-black"
+                  className="px-6 py-3 rounded-full font-manrope font-medium text-sm bg-button-linear text-white"
                 />
               </div>
             </div>

@@ -44,14 +44,14 @@ export default function CreativeMarquee() {
     ];
 
     return (
-        <section className="relative overflow-hidden bg-dark-color lg:py-16 md:py-10 py-8">
+        <section className="relative overflow-hidden bg-white lg:py-16 md:py-10 py-8">
 
-            <div className="relative z-10">
+            <div className="relative z-10 overflow-hidden">
                 <Marquee 
                     speed={50} 
                     pauseOnHover={true} 
                     gradient={false}
-                    className="select-none"
+                    className="select-none overflow-hidden"
                 >
                     {marqueeItems.concat(marqueeItems).map((item, index) => (
                         <div 
@@ -59,7 +59,7 @@ export default function CreativeMarquee() {
                             className="group lg:mx-10 md:mx-8 mx-2 flex items-center gap-6 cursor-pointer transform transition-all duration-300 hover:scale-105 py-4 px-4 overflow-hidden"
                         >
                             {/* Icon Card with 3D Glow */}
-                            <div className={`relative p-4 rounded-2xl bg-gradient-to-br ${item.gradient} shadow-2xl transform-gpu transition-all duration-500 group-hover:rotate-6 group-hover:scale-110`}>
+                            <div className={`relative p-4 rounded-2xl bg-gradient-to-br ${item.gradient} transform-gpu transition-all duration-500 group-hover:rotate-6 group-hover:scale-105`}>
                                 <div className={`absolute inset-0 rounded-2xl bg-white/20 blur-xl ${item.glow} animate-ping`}></div>
                                 <div className="relative text-white">
                                     {item.icon}
@@ -68,10 +68,10 @@ export default function CreativeMarquee() {
 
                             {/* Text with Animated Underline */}
                             <div className="relative">
-                                <span className="text-2xl md:text-4xl font-extrabold text-white tracking-tight">
+                                <span className="text-2xl md:text-4xl font-extrabold text-black tracking-tight">
                                     {item.text}
                                 </span>
-                                <div className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-white to-transparent transition-all duration-500 group-hover:w-full"></div>
+                                <div className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-black to-transparent transition-all duration-500 group-hover:w-full"></div>
                             </div>
                         </div>
                     ))}

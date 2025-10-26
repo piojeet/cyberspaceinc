@@ -7,11 +7,11 @@ export default function FooterContactForm() {
     <div>
 
       {/* Get In Touch Section */}
-      <section className="relative md:py-14 pt-10 px-6 bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden">
+      <section className="relative py-20 pt-14 px-6 bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden">
         {/* Decorative Elements */}
-        <div className="absolute top-0 left-0 w-96 h-96 bg-black/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-black/10 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-gradient-to-br from-gray-800 to-gray-900 rounded-full blur-3xl opacity-50"></div>
+        <div className="absolute top-0 left-0 w-96 h-96 bg-black/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-black/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-gradient-to-br from-gray-800 to-gray-900 rounded-full blur-3xl opacity-10"></div>
         
         {/* Geometric Patterns */}
         <div className="absolute inset-0 opacity-5">
@@ -29,7 +29,7 @@ export default function FooterContactForm() {
             </div>
             
             <h2 className="text-4xl md:text-5xl font-manrope text-center font-bold">
-              Get In <span className="text-transparent bg-clip-text bg-gradient-to-r from-black to-black">Touch</span>
+              Get In <span className="text-transparent bg-clip-text bg-button-linear">Touch</span>
             </h2>
             
             <p className="font-manrope text-lg text-gray-600 text-center mt-4 max-w-[700px] mx-auto">
@@ -100,7 +100,7 @@ export default function FooterContactForm() {
                 <AnimatedButton 
                     label="Get a free consultation"
                     to="/"
-                    className="px-8 py-4 rounded-full font-manrope font-medium text-sm bg-black text-white"
+                    className="px-8 py-4 rounded-full font-manrope font-medium text-sm bg-gradient-to-br from-cyan-400 to-blue-600 text-white"
                     />
 
                   {/* <div className="flex items-center gap-6 text-sm text-gray-400">
@@ -123,9 +123,9 @@ export default function FooterContactForm() {
             </div>
 
             {/* Additional Floating Card - Support Info */}
-            <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="group relative bg-white backdrop-blur-sm rounded-2xl p-6 border border-black/10 hover:bg-black/10 transition-all duration-300 hover:-translate-y-1">
-                <div className="w-12 h-12 rounded-full bg-black/30 flex items-center justify-center mb-4 group-hover:bg-black/40 transition-colors">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center mb-4 group-hover:bg-black/40 transition-colors">
                   <Phone className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-black mb-2 font-manrope">Call Us</h3>
@@ -133,7 +133,7 @@ export default function FooterContactForm() {
               </div>
 
               <div className="group relative bg-white backdrop-blur-sm rounded-2xl p-6 border border-black/10 hover:bg-black/10 transition-all duration-300 hover:-translate-y-1">
-                <div className="w-12 h-12 rounded-full bg-black/30 flex items-center justify-center mb-4 group-hover:bg-black/40 transition-colors">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center mb-4 group-hover:bg-black/40 transition-colors">
                   <Mail className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-black mb-2 font-manrope">Email Us</h3>
@@ -141,13 +141,13 @@ export default function FooterContactForm() {
               </div>
 
               <div className="group relative bg-white backdrop-blur-sm rounded-2xl p-6 border border-black/10 hover:bg-black/10 transition-all duration-300 hover:-translate-y-1">
-                <div className="w-12 h-12 rounded-full bg-black/30 flex items-center justify-center mb-4 group-hover:bg-black/40 transition-colors">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center mb-4 group-hover:bg-black/40 transition-colors">
                   <MapPin className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-black mb-2 font-manrope">Visit Us</h3>
                 <p className="text-sm text-gray-400 font-manrope">Edison, NJ 08837, USA</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

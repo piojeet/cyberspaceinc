@@ -74,7 +74,7 @@ export default function HomeAction() {
                     <AnimatedButton 
                     label='View All'
                     to="/"
-                    className="py-2 px-6 border border-black rounded-full font-manrope font-medium bg-black text-white"
+                    className="py-2 px-6 rounded-full font-manrope font-medium bg-gradient-to-br from-cyan-400 to-blue-600 text-white"
                     />
                 </div>
             </div>

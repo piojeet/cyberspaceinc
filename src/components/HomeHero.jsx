@@ -7,20 +7,20 @@ import Glob from './Glob'
 
 export default function HomeHero() {
     return (
-        <section className='md:pt-[200px] pt-[140px] relative bg-dark-color md:pb-[100px] pb-[50px]'>
+        <section className='md:pt-[200px] pt-[140px] relative md:pb-[100px] pb-[50px]'>
             <div className='max-w-[1440px] w-full mx-auto lg:px-8 px-4 gap-16 relative z-10 grid lg:grid-cols-2 md:grid-cols-[1fr_.7fr] grid-cols-1'>
                 <div className='space-y-4 content-center max-w-[800px] w-full mx-auto flex flex-col items-center justify-center md:items-start'>
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-500/40 border border-[#6366f1]/20">
-                        <Sparkles className="h-4 w-4 text-white" />
-                        <span className="text-sm text-white font-manrope">AI-Powered Innovation</span>
+                        <Sparkles className="h-4 w-4 text-black" />
+                        <span className="text-sm text-black font-manrope">AI-Powered Innovation</span>
                     </div>
-                    <h1 className='lg:text-7xl md:text-5xl text-4xl font-manrope font-bold leading-tight text-white text-center md:text-start'>
+                    <h1 className='lg:text-7xl md:text-5xl text-4xl font-manrope font-bold !leading-tight text-black text-center md:text-start'>
                         EXPLORE INNOVATIONS HERE
                     </h1>
-                    <div className='md:text-2xl text-xl font-manrope text-white text-center md:text-start'>
+                    <div className='md:text-2xl text-xl font-manrope text-black text-center md:text-start'>
                         Welcome to Cyber Space Technologies
                     </div>
-                    <p className='font-manrope leading-snug text-white text-center md:text-start'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta maxime excepturi dolore quam, sed inventore deserunt rem numquam vel aliquam?</p>
+                    <p className='font-manrope leading-snug text-black text-center md:text-start'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta maxime excepturi dolore quam, sed inventore deserunt rem numquam vel aliquam?</p>
                 </div>
 
                 <div className='hidden'>
@@ -31,18 +31,18 @@ export default function HomeHero() {
 
                         <div className='bg-white/30 p-4 flex flex-col justify-between rounded-lg'>
                             <div className='font-manrope text-3xl'>
-                                <div className='text-white'>30%+ Faster</div>
-                                <div className='text-white/60'>Time-to-up</div>
+                                <div className='text-black'>30%+ Faster</div>
+                                <div className='text-black/60'>Time-to-up</div>
                             </div>
 
-                            <p className='font-manrope text-white'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos qui reprehenderit est eius vitae molestiae, magni distinctio. Hic, ducimus obcaecati.</p>
+                            <p className='font-manrope text-black'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos qui reprehenderit est eius vitae molestiae, magni distinctio. Hic, ducimus obcaecati.</p>
                         </div>
                     </div>
 
                     <div className='mt-2 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% py-8 flex items-center justify-center rounded-lg'>
                         <div className='bg-black/10 flex items-center gap-2 p-4 py-3 rounded-lg'>
                             <img src={Icon} alt="" className='h-8' />
-                            <div className='leading-none font-manrope font-medium text-white'>Automate complex enterprise workflows</div>
+                            <div className='leading-none font-manrope font-medium text-black'>Automate complex enterprise workflows</div>
                         </div>
                     </div>
                 </div>
@@ -52,16 +52,16 @@ export default function HomeHero() {
                 </div>
 
             </div>
-            <div className='absolute top-0 left-0 w-full h-full opacity-60 flex items-center justify-center'>
+            <div className='absolute top-0 left-0 w-full h-full opacity-20 flex items-center justify-center'>
                 <RippleGrid
                     enableRainbow={false}
-                    gridColor="#ffffff"
+                    gridColor="#0054a2"
                     rippleIntensity={0.05}
-                    gridSize={10}
-                    gridThickness={15}
+                    gridSize={15}
+                    gridThickness={20}
                     mouseInteraction={true}
                     mouseInteractionRadius={1.2}
-                    opacity={0.8}
+                    opacity={0.2}
                 />
             </div>
         </section>

@@ -45,7 +45,7 @@ export default function FAQ() {
     <section className="bg-white py-10">
       <div className="max-w-[1440px] w-full lg:p-8 p-4 mx-auto">
         <h2 className="text-4xl md:text-5xl font-manrope text-center font-bold">
-          Our Core AI Transformation Services
+        Frequently Asked Questions <span className="text-transparent bg-clip-text bg-button-linear">Questions</span>
         </h2>
         <p className="font-manrope text-lg text-gray-600 text-center mt-4 max-w-[700px] mx-auto">
           Explore how AI can reshape your business with automation, insights, and innovation.

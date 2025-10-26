@@ -31,14 +31,14 @@ function GlobeMesh() {
     <mesh ref={meshRef} scale={2}>
       <sphereGeometry args={[1, 64, 64]} />
       <meshStandardMaterial
-        color="#33aaff"
-        transparent
+        // color="#33aaff"
+        // transparent
         // opacity={0.2}
-        side={5} // DoubleSide
+        // side={5}
         map={color}
         normalMap={normal}
         aoMap={aoMap}
-        aoMapIntensity={3}
+        aoMapIntensity={2}
       />
     </mesh>
   )
@@ -48,9 +48,20 @@ export default function Glob() {
   return (
     <div className="w-full lg:h-[500px] md:h-[300px] h-[250px]">
       <Canvas camera={{ position: [0, 0, 5], fov: 50 }}>
-        <ambientLight intensity={3} color={"#88ccff"} />
-        <directionalLight intensity={3} position={[6, 6, 6]} color={"#66b3ff"} />
-        <pointLight position={[6, 3, 5]} intensity={3} color={"#3366ff"} />
+        <ambientLight
+         intensity={3} 
+        //  color={"#88ccff"} 
+         />
+        <directionalLight
+        //  intensity={3} 
+         position={[6, 6, 6]} 
+         color={"#66b3ff"} 
+         />
+        <pointLight 
+        position={[6, 3, 5]} 
+        intensity={3} 
+        color={"#3366ff"} 
+        />
 
         <GlobeMesh />
         <OrbitControls

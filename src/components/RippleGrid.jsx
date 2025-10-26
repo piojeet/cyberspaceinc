@@ -3,7 +3,7 @@ import { Renderer, Program, Triangle, Mesh } from 'ogl';
 
 const RippleGrid = ({
   enableRainbow = false,
-  gridColor = '#ffffff',
+  gridColor = '#0054a2',
   rippleIntensity = 0.05,
   gridSize = 10.0,
   gridThickness = 15.0,

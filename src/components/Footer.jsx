@@ -8,9 +8,9 @@ import { ChevronRight, Mail, MapPin, Phone } from "lucide-react";
 
 export default function Footer() {
     const socialLinks = [
-        { icon: <FaLinkedin />, label: "LinkedIn" },
-        { icon: <AiFillInstagram />, label: "Instagram" },
-        { icon: <RiFacebookBoxFill />, label: "Facebook" },
+        { icon: <FaLinkedin size={20} />, label: "LinkedIn" },
+        { icon: <AiFillInstagram size={20} />, label: "Instagram" },
+        { icon: <RiFacebookBoxFill size={20} />, label: "Facebook" },
     ];
 
     const services = [
@@ -62,8 +62,8 @@ export default function Footer() {
             country: "United States",
             address: (
                 <>
-                    3515 ST 27 South, STE 234 <br />
-                    Edison, NJ 08837 <br /> +1 732-625-6009
+                    Cyber Space Technologies LLC., <br />
+                    2015 RT 27 South, STE 234, <br /> Edison, NJ 08817. <br />4300 Punjab Way, STE 280, <br />Frisco, TX 75033 <br />+1 732-515-9299
                 </>
             ),
         },
@@ -71,8 +71,9 @@ export default function Footer() {
             country: "India",
             address: (
                 <>
-                    NIBM EROS City <br />
-                    Pune, Maharashtra 411048 <br /> +91 9765279615
+                    Cyber Space Technologies, Pvt. Ltd., <br />
+                    Suite # 414, Manjeera Magestic Commercial, <br /> JNTU-HITech City Road, <br />Hyderabad-500085. India
+                    +91 9182273913
                 </>
             ),
         },
@@ -80,8 +81,8 @@ export default function Footer() {
             country: "United Kingdom",
             address: (
                 <>
-                    FL 25 Stanley Street <br />
-                    London, WC2A 4AH <br /> +44 7779865902
+                    Cyber Space Technologies, Ltd., <br />
+                    71-75 Shelton Street, Covent Garden, <br /> London, United Kingdom, WC2H 9JQ. <br /> +44 7770695162
                 </>
             ),
         },
@@ -89,8 +90,8 @@ export default function Footer() {
             country: "Canada",
             address: (
                 <>
-                    3279 Bixby Avenue <br />
-                    Weston, Ontario M9W 1X2 <br /> +1 (519) 864-7019
+                    Cyber Space Technologies Inc., <br />
+                    2279 Mckay Avenue, Windsor, Ontario, <br /> N9B3W6, Canada <br />+1 (519) 984-7976
                 </>
             ),
         },
@@ -99,7 +100,7 @@ export default function Footer() {
     return (
         <footer className="bg-dark-color text-white">
             {/* Main Section */}
-            <div className="max-w-[1400px] mx-auto lg:px-8 px-4 py-20 lg:pb-20 pb-10 grid gap-12 lg:grid-cols-12">
+            <div className="max-w-[1400px] mx-auto lg:px-8 px-4 lg:py-20 py-10 lg:pb-12 grid gap-12 lg:grid-cols-12">
                 {/* Logo + Info */}
                 <div className="lg:col-span-4">
                     <img src={Logo} alt="CST Logo" className="h-20 object-contain mb-6" />
@@ -114,10 +115,10 @@ export default function Footer() {
                             <NavLink
                                 key={i}
                                 to="#"
-                                className="w-11 h-11 rounded-lg bg-white/5 flex items-center justify-center hover:bg-gradient-to-br hover:from-blue-500 hover:to-cyan-400 transition-all duration-300 group"
+                                className="w-11 h-11 rounded-lg bg-white/5 flex items-center justify-center hover:bg-button-linear transition-all duration-300 group"
                                 aria-label={label}
                             >
-                                <span className="w-5 h-5 text-white/60 group-hover:text-white">
+                                <span className=" text-white/60 group-hover:text-white">
                                     {icon}
                                 </span>
                             </NavLink>
@@ -126,13 +127,13 @@ export default function Footer() {
                 </div>
 
                 {/* Link Sections */}
-                <div className="lg:col-span-8 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="lg:col-span-8 grid gap-10 grid-cols-2 lg:grid-cols-3">
                     {/* Services */}
                     <FooterList title="Services" items={services} />
                     {/* Company */}
                     <FooterList title="Company" items={company} />
                     {/* Contact */}
-                    <div>
+                    <div className="col-span-2 lg:col-span-1">
                         <h3 className="text-sm mb-6 uppercase tracking-wider font-medium">
                             Get In Touch
                         </h3>
@@ -154,12 +155,12 @@ export default function Footer() {
             </div>
 
             {/* Global Presence */}
-            <div className="border-t border-white/5">
+            <div className="border-t border-white/5 pt-8">
                 <div className="max-w-[1400px] mx-auto lg:px-8 px-4 py-12 pt-0">
                     <h3 className="text-sm mb-8 uppercase tracking-wider text-white/90">
                         Global Presence
                     </h3>
-                    <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+                    <div className="grid gap-8 grid-cols-2 lg:grid-cols-4">
                         {locations.map(({ country, address }, i) => (
                             <div key={i}>
                                 <div className="flex items-center gap-2 mb-3">
@@ -199,7 +200,7 @@ export default function Footer() {
 /* ========== Reusable Footer List ========== */
 function FooterList({ title, items }) {
     return (
-        <div>
+        <div className="col-span-1">
             <h3 className="text-sm mb-6 uppercase tracking-wider font-medium">
                 {title}
             </h3>
