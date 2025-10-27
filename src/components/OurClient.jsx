@@ -78,11 +78,11 @@ export default function OurClient() {
                                     <ArrowRight className="w-4 h-4" />
                                 </button> */}
 
-                                <AnimatedButton
+                                {/* <AnimatedButton
                                     label="View Case Study"
                                     to="/"
                                     className="px-8 py-4 mt-4 rounded-full font-manrope font-medium text-sm text-white transition-all duration-300 bg-button-linear w-full"
-                                />
+                                /> */}
                             </div>
 
                             {/* Corner Accent */}

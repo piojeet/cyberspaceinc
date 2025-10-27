@@ -2,7 +2,7 @@ import { Canvas, useFrame, useLoader } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
 import { TextureLoader } from 'three'
 import React, { useRef, useEffect } from 'react'
-import Color from '../assets/images/color.jpg'
+import Color from '../assets/images/color.png'
 import Normal from '../assets/images/normal.png'
 import Occlusion from '../assets/images/occlusion.jpg'
 
